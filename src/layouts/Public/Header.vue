@@ -1,13 +1,35 @@
 <template>
   <div class="header">
-    <div class="logo-container">
+    <div class="logo-container step2" v-if="step == 'Step 2 of 3'">
       <img
         class="logo"
         alt="Juridoc Logo"
         v-lazy="{ src: '/images/logo.png' }"
       />
     </div>
-    <div class="selector">
+    <div class="logo-container step3" v-else-if="step == 'Step 3 of 3'">
+      <img
+        class="logo"
+        alt="Juridoc Logo"
+        v-lazy="{ src: '/images/logo.png' }"
+      />
+    </div>
+    <div class="logo-container" v-else>
+      <img
+        class="logo"
+        alt="Juridoc Logo"
+        v-lazy="{ src: '/images/logo.png' }"
+      />
+    </div>
+    <div class="selector step2" v-if="step == 'Step 2 of 3'">
+      <span>{{step}}</span>
+      <SelectLang v-model="currentLang" />
+    </div>
+     <div class="selector step3" v-else-if="step == 'Step 3 of 3'">
+      <span>{{step}}</span>
+      <SelectLang v-model="currentLang" />
+    </div>
+    <div class="selector" v-else>
       <span>{{step}}</span>
       <SelectLang v-model="currentLang" />
     </div>
@@ -51,23 +73,31 @@ export default defineComponent({
   display: grid;
   grid-column: 1/3;
   grid-template-columns: 510px 480px;
-  height: 50px;
+  height: 60px;
 
   .logo-container {
     border-radius: 5px 0px 0px 0px;
     padding-top: 23px;
     background-color: $neutral-bg ;
     padding-left: 90px;
+     padding: 30px 60px 50px 60px;
     img {
       width: 83px;
       height: 23px;
     }
   }
+    .logo-container.step2{
+      padding: 30px 70px 50px 70px;
+    }
+     .logo-container.step3{
+      padding: 30px 70px 50px 70px;
+    }
   .selector {
     border-radius: 0px 5px 0px 0px;
     padding-top: 23px;
     padding-right: 90px;
     padding-left: 70px;
+    padding: 30px 60px 50px 60px;
     width: 100%;
     background-color: $white;
     justify-content: space-between;
@@ -78,8 +108,28 @@ export default defineComponent({
       line-height: 27px;
     }
   }
+  .selector.step3{
+    padding: 30px 40px 50px 40px;
+  }
 }
-
+@media (orientation: portrait)
+{
+  .header .logo-container.step3 {
+      border-radius: 5px 5px 0px 0px;
+      padding-top: 27px;
+      background-color: #fafbfc;
+      padding-left: 10%;
+  }
+}
+@media (orientation: portrait)
+{
+  .header .logo-container.step2 {
+      border-radius: 5px 5px 0px 0px;
+      padding-top: 27px;
+      background-color: #fafbfc;
+      padding-left: 10%;
+  }
+}
 @media (orientation: portrait) {
   .header {
     display: flex;
@@ -102,7 +152,7 @@ export default defineComponent({
       padding-top: 27px;
       width: 100%;
       background-color: $neutral-bg ;
-      justify-content: flex-end;
+      justify-content: flex-start;
       display: flex;
     }
 

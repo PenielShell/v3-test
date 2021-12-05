@@ -4,9 +4,6 @@
     @submit.prevent
   >
     <div class="form-content">
-      <div class="form-title">
-        <h1>{{ t(`Step2.form.title`) }}</h1>
-      </div>
       <div class="inputs">
         <div class="names">
           <base-input

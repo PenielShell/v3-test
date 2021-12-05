@@ -63,4 +63,12 @@ a {
   color: $link-color;
   text-decoration: none;
 }
+@media (orientation: portrait)
+{
+  .completed {
+  
+      padding: 27px 30px 50px 30px;
+     
+  }
+}
 </style>

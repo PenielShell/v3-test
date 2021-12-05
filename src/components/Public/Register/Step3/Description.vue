@@ -29,6 +29,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+div.description {
+    padding: 30px 70px 50px 70px;
+}
 h1, p {
   color: $text-dark-grey-2;
 }
@@ -37,5 +40,12 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+@media (orientation: portrait){
+  div.description {
+      border-radius: 0px;
+      padding: 27px 30px 50px 30px;
+      height: fit-content;
+  }
 }
 </style>

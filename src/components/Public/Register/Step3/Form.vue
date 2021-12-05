@@ -4,9 +4,6 @@
     @submit.prevent
   >
     <div class="form-content">
-      <div class="form-title">
-        <h1>{{ t(`Step3.form.title`) }}</h1>
-      </div>
       <div class="inputs">
         <base-input
           v-model="v$.company.$model"
@@ -193,5 +190,31 @@ export default defineComponent({
 }
 .form .form-title h1 {
   font-size: 28px;
+}
+.header{
+    .logo-container{
+          padding: 30px 70px 50px 70px;
+    }
+  }  
+.form{
+      padding: 30px 40px 50px 40px;
+}
+div.description{
+  padding: 30px 70px 50px 70px;
+}
+.header {
+  .selector{
+  padding: 30px 40px 50px 40px;
+}
+}
+button{
+  font-size: 16px;
+}
+@media (orientation: portrait)
+{
+  .form {
+      border-radius: 0px 0px 5px 5px;
+      padding: 30px 30px 50px 30px;
+  }
 }
 </style>

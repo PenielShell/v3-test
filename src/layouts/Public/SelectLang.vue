@@ -72,6 +72,7 @@ select {
   appearance: none;
   border: none;
   padding-right: 20px;
+  font-size: 13px;
   text-align: right;
   background: url('../../assets/icons/select_icon.svg') no-repeat 98%;
   background-size: 10px 10px;

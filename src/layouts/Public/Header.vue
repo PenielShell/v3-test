@@ -86,10 +86,11 @@ export default defineComponent({
     }
   }
     .logo-container.step2{
-      padding: 30px 70px 50px 70px;
+          padding: 30px 70px 50px;
+      padding-top: 20px;
     }
      .logo-container.step3{
-      padding: 30px 60px 50px;
+      padding: 30px 60px 50px 60px;
       padding-top: 10px;
     }
   .selector {
@@ -106,7 +107,7 @@ export default defineComponent({
     }
   }
   .selector.step3{
-     padding: 30px 40px 50px;
+     padding: 50px 40px 50px 40px;
       padding-top: 40px;
   }
 }

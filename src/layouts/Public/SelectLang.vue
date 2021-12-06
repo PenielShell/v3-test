@@ -1,6 +1,7 @@
 <template>
   <select @change="(e) => changeSelect(e)">
     <option
+    class="text-option"
       v-for="(option, i) in options.languages"
       :selected="modelValue === option['_id']"
       :value="option['_id']"
@@ -80,6 +81,9 @@ select {
   // margin-bottom: 3rem;
   &::-ms-expand {
     display: none;
+  }
+  .text-option{
+    font-size: 13px;
   }
 }
 </style>

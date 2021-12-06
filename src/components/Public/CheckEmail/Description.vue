@@ -1,7 +1,7 @@
 <template>
   <div class="description">
     <h1>{{ t(`CheckEmail.description.main`) }}</h1>
-    <p v-if="email && isCompleted">
+    <p v-if="email && isCompleted" class="">
       {{ t(`CheckEmail.description.sub`) }}
       <span class="highlight">{{email}}</span>
     </p>
@@ -47,6 +47,7 @@ export default defineComponent({
   }
   p {
     color: $text-dark-grey-5;
+        font-size: 15px;
   }
   a {
     color: $link-color;

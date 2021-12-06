@@ -30,7 +30,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.description {
-    padding: 30px 70px 50px 70px;
+    padding: 30px 60px 50px 60px;
 }
 h1, p {
   color: $text-dark-grey-2;

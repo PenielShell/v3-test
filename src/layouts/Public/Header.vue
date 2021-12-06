@@ -107,7 +107,7 @@ export default defineComponent({
     }
   }
   .selector.step3{
-     padding: 50px 40px 50px 40px;
+     padding: 30px 40px 50px 40px;
       padding-top: 40px;
   }
 }

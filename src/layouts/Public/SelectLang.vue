@@ -1,6 +1,7 @@
 <template>
   <select @change="(e) => changeSelect(e)">
     <option
+    class="text-option"
       v-for="(option, i) in options.languages"
       :selected="modelValue === option['_id']"
       :value="option['_id']"
@@ -72,6 +73,7 @@ select {
   appearance: none;
   border: none;
   padding-right: 20px;
+  font-size: 13px;
   text-align: right;
   background: url('../../assets/icons/select_icon.svg') no-repeat 98%;
   background-size: 10px 10px;
@@ -79,6 +81,9 @@ select {
   // margin-bottom: 3rem;
   &::-ms-expand {
     display: none;
+  }
+  .text-option{
+    font-size: 13px;
   }
 }
 </style>

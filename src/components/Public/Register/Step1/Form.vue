@@ -147,5 +147,15 @@ export default defineComponent({
 });
 </script>
 
-<style>
+
+<style lang="scss" scoped>
+.header {
+  .logo-container {
+     padding: 30px 60px 50px 60px;
+  }
+   .selector {
+      padding: 30px 60px 50px 60px;
+   }
+
+}
 </style>

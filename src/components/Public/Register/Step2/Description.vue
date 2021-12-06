@@ -31,23 +31,36 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.description {
+    padding: 30px 70px 50px 70px;
   h1 {
     flex-grow: 1;
   }
   img.descriptive {
     width: 100px;
+    display: flex;
+    margin: unset;
   }
 }
 .lawyer-image-container {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 4rem;
   .legend {
     display: flex;
     flex-direction: column;
+    text-align: left;
     span {
       color: $text-dark-grey;
     }
+  }
+}
+@media (orientation: portrait)
+{
+  div.description {
+      border-radius: 0px;
+      padding: 27px 30px 50px 30px;
+      height: fit-content;
   }
 }
 </style>

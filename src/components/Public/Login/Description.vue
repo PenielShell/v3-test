@@ -25,6 +25,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.description {
+   padding: 30px 60px 50px 60px;
   p {
     flex-grow: 1;
   }

@@ -29,6 +29,10 @@ div.description {
     flex-grow: 1;
   }
 }
+div.description .descriptive {
+    width: 90%;
+    align-self: center;
+}
 @media (orientation: portrait){
   div.description {
       border-radius: 0px;

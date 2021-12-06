@@ -78,18 +78,19 @@ export default defineComponent({
   .logo-container {
     background-color: $neutral-bg ;
     border-radius: 5px 0 0;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-left: 60px;
     img {
-      width: 83px;
-      height: 23px;
+      width: 30%;
+    height: 80%;
     }
   }
     .logo-container.step2{
       padding: 30px 70px 50px 70px;
     }
      .logo-container.step3{
-      padding: 30px 70px 50px 70px;
+      padding: 30px 60px 50px;
+      padding-top: 10px;
     }
   .selector {
     border-radius: 0 5px 0 0;
@@ -105,7 +106,8 @@ export default defineComponent({
     }
   }
   .selector.step3{
-    padding: 30px 40px 50px 40px;
+     padding: 30px 40px 50px;
+      padding-top: 40px;
   }
 }
 @media (orientation: portrait)

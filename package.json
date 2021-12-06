@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "vite --port 3000",
-        "build": "vue-tsc --noEmit && vite build",
+        "build": "vite build",
         "serve": "vite preview",
         "s3sync": "aws s3 sync ./dist s3://juridoc --profile tilit-stag",
         "deploy": "yarn build",

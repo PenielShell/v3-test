@@ -37,16 +37,19 @@ div.description {
   }
   img.descriptive {
     width: 100px;
+    display: flex;
+    margin: unset;
   }
 }
 .lawyer-image-container {
-  display: block;
+  display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 4rem;
   .legend {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     span {
       color: $text-dark-grey;
     }

@@ -73,14 +73,13 @@ export default defineComponent({
   display: grid;
   grid-column: 1/3;
   grid-template-columns: 510px 480px;
-  height: 60px;
+  height: 80px;
 
   .logo-container {
-    border-radius: 5px 0px 0px 0px;
-    padding-top: 23px;
     background-color: $neutral-bg ;
-    padding-left: 90px;
-     padding: 30px 60px 50px 60px;
+    border-radius: 5px 0 0;
+    padding-top: 50px;
+    padding-left: 60px;
     img {
       width: 83px;
       height: 23px;
@@ -93,13 +92,10 @@ export default defineComponent({
       padding: 30px 70px 50px 70px;
     }
   .selector {
-    border-radius: 0px 5px 0px 0px;
-    padding-top: 23px;
-    padding-right: 90px;
-    padding-left: 70px;
-    padding: 30px 60px 50px 60px;
+    border-radius: 0 5px 0 0;
+    padding: 50px 60px 0;
     width: 100%;
-    background-color: $white;
+    background-color: #fff;
     justify-content: space-between;
     display: flex;
     span {

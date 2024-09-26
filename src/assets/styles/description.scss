@@ -23,9 +23,11 @@ div.description {
         }
     }
     img.descriptive {
-        width: 100%;
-        display: flex;
         margin: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
     .description-footer {
         display: flex;
